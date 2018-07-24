@@ -37,6 +37,9 @@ type Client struct {
 	ApprovalsDeleted     bool     `json:"approvals_deleted,omitempty"`
 	RequiredUserGroups   []string `json:"required_user_groups,omitempty"`
 	ClientSecret         string   `json:"client_secret,omitempty"`
+	ShowOnHomePage       bool     `json:"show-on-homepage,omitempty"`
+	HomePageAppLaunchURL string   `json:"app-launch-url,omitempty"`
+	HomePageAppIcon      string   `json:"app-icon,omitempty"`
 	LastModified         int64    `json:"lastModified,omitempty"`
 }
 
